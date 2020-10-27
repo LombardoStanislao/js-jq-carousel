@@ -5,10 +5,11 @@
 }
 
 .container {
-    width: 900px;
+    width: 1200px;
     height: 600px;
     margin: auto;
     margin-top: 200px;
+    position: relative;
 }
 
 .prev, .next {
@@ -21,7 +22,7 @@
 }
 
 .carousel {
-    width: calc(900px - 200px);
+    width: calc(100% - 200px);
     height: 100%;
     background-color: lightblue;
     float: left;
@@ -33,8 +34,20 @@ img {
     height: 100%;
     object-fit: cover;
     display: none;
+
 }
 
 .active {
     display: block;
+}
+
+.fa-circle {
+    color: #38bcb1;
+}
+
+.circle-active-img {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
 }
